@@ -1,6 +1,80 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
-    <h1>Home</h1>
-    <p> Welcome to the home page!</p>
+
+  <main>
+
+    <section class="slider-area ">
+      <div class="slider-active">
+
+        <div class="single-slider slider-height d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-7 col-md-10 col-sm-11">
+                <div class="hero__caption">
+                  <h3 data-animation="fadeInLeft" data-delay="0.2s">Empowering children<br></h3>
+                  <span data-animation="fadeInLeft" data-delay="0.4s">to excel in mathematics through the richness of Swahili language</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="about-low-area section-padding40">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-10 col-lg-10 col-md-10 col-sm-11">
+            <div class="section-tittle text-center mb-70">
+              <h2>.. <span>Primary vSchool Simulation</span></h2>
+              <p>Join our interactive platform designed exclusively for primary school students. We're excited to introduce innovative features that make learning math engaging and accessible</p>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-12">
+            <div class="about-caption">
+              <div class="single-features mb-30">
+                <div class="features-icon">
+                  <img src="{% static 'assets/img/icon/about-icon1.svg' %}" alt>
+                </div>
+                <div class="features-caption">
+                  <h3 class="color-font1"> Voice Question Prompting</h3>
+                  <p>Ask math questions using your voice! Our platform supports voice question prompting, allowing students to verbally express their math queries for a more natural and interactive learning experience.</p>
+                </div>
+              </div>
+              <div class="single-features mb-30">
+                <div class="features-icon">
+                  <img src="{% static 'assets/img/icon/about-icon2.svg' %}" alt>
+                </div>
+                <div class="features-caption">
+                  <h3 class="color-font2"> Step-by-Step Solution Explanations</h3>
+                  <p>No more struggling with complex problems. Benefit from detailed, step-by-step solution explanations provided by our expert teachers. Understand mathematical concepts thoroughly and build a strong foundation in each topic.</p>
+                </div>
+              </div>
+              <div class="single-features mb-30">
+                <div class="features-icon">
+                  <img src="{% static 'assets/img/icon/about-icon3.svg' %}" alt>
+                </div>
+                <div class="features-caption">
+                  <h3 class="color-font3"> vMath follows National education syllabi</h3>
+                  <p>Carefully curated instructions folowing country standard education syllabi</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-12">
+
+            <div class="about-img">
+              <img src="{% static 'assets/img/gallery/about_large.png' %}" alt class="w-100 rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
 {% endblock %}
