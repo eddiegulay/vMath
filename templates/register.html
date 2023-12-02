@@ -1,0 +1,47 @@
+{% extends "base_.html" %}
+{% load static %}
+{% block content %}
+<main class="login-body" data-vide-bg="{% static 'assets/img/login-bg.mp4' %}">
+
+    <form class="form-default" method="POST"> {% csrf_token %}
+        <div class="login-form">
+        
+            <div class="logo-login">
+                <a href="index-2.html"><img src="{% static 'assets/img/logo/loder.png' %}" alt="Logo"></a>
+            </div>
+            <h2>Registration Here</h2>
+
+            {% if messages %}
+                <div class="alert">
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            <div class="form-input">
+                <label for="id_name">Full name</label>
+                <input type="text" name="name" id="id_name" placeholder="Full name" required>
+            </div>
+            <div class="form-input">
+                <label for="id_email">Email Address</label>
+                <input type="email" name="email" id="id_email" placeholder="Email Address" required>
+            </div>
+            <div class="form-input">
+                <label for="id_password">Password</label>
+                <input type="password" name="password" id="id_password" placeholder="Password" required>
+            </div>
+            <div class="form-input">
+                <label for="id_confirm_password">Confirm Password</label>
+                <input type="password" name="confirm_password" id="id_confirm_password" placeholder="Confirm Password" required>
+            </div>
+            <div class="form-input pt-30">
+                <input type="submit" name="submit" value="Registration">
+            </div>
+            
+            <a href="/vMath/login" class="registration">Login</a>
+        </div>
+    </form>
+
+</main>
+{% endblock %}

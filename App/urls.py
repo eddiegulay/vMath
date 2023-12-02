@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(('home.urls', 'home'), namespace='home')),
+    path('vMath/', include(('engine.urls', 'engine'), namespace='engine')),
 ]
