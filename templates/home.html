@@ -2,68 +2,29 @@
 {% load static %}
 {% block content %}
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <h1 class="text-center">Voice Mathematics Problem Solver</h1>
-        </div>
-    </div>
-    <div class="row vh-100">
-        <div class="col-6 d-flex justify-content-center align-items-center flex-col">
-            <img src="{% static 'assets/img/microphone.png' %}" alt="Microphone" style="width: 400px; height: auto;">
-            <!-- record button-->
-            <button class="btn btn-primary btn-lg" id="recordButton">Record</button>
-        </div>
-        <div class="col-6">
-            <!-- Display cards here -->
-            <div class="row">
-                <div class="col">
-                    <h3 class="text-center">Solution Panel</h3>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header">
-                            The question asked
-                        </div>
-                        <div class="card-body">
-                            <!-- Display the question here -->
-                        </div>
-                    </div>
-                    <!-- Add 4 cards for the steps -->
-                    <div class="card">
-                        <div class="card-header">
-                            Step 1
-                        </div>
-                        <div class="card-body">
-                            <!-- Display the instruction for step 1 here -->
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            Step 2
-                        </div>
-                        <div class="card-body">
-                            <!-- Display the instruction for step 2 here -->
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            Step 3
-                        </div>
-                        <div class="card-body">
-                            <!-- Display the instruction for step 3 here -->
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header">
-                            Step 4
-                        </div>
-                        <div class="card-body">
-                            <!-- Display the instruction for step 4 here -->
-                        </div>
-                    </div>
-                </div>
+    <div class="d-flex flex-column justify-content-center align-items-center vh-100">
+        <h1>Voice Mathematics Problem Solver</h1>
+        <div class="d-flex justify-content-around align-items-center w-100">
+            <img src="{% static 'assets/img/microphone.png' %}" alt="Microphone" style="width: 300px; height: auto;">
+            <div>
+                <h4>Suali Lililoulizwa</h4>
+                <p>Juma alikwenda sokoni kununua matunda. Alinunua kilogramu 4 za mapera, kilogramu 2.5 za ndizi, na kilogramu 1.8 za machungwa. Ikiwa kila kilogramu ya mapera inagharimu Shilingi 500 za Kitanzania, ndizi zinagharimu Shilingi 700 kwa kilogramu, na machungwa yanagharimu Shilingi 600 kwa kilogramu, Juma alitumia kiasi gani pesa kwa jumla kununua matunda?</p>
+            
+                <!-- Solution Steps -->
+                <h4><strong>Hatua 1</strong></h4>
+                <p>Gharama ya mapera: 4 kg × 500 TZS/kg = 2000 TZS. Juma alitumia 2000 TZS kwa kununua mapera.</p>
+            
+                <h4><strong>Hatua 2</strong></h4>
+                <p>Gharama ya ndizi: 2.5 kg × 700 TZS/kg = 1750 TZS. Juma alitumia 1750 TZS kwa kununua ndizi.</p>
+            
+                <h4><strong>Hatua 3</strong></h4>
+                <p>Gharama ya machungwa: 1.8 kg × 600 TZS/kg = 1080 TZS. Juma alitumia 1080 TZS kwa kununua machungwa.</p>
+            
+                <h4><strong>Hatua 4</strong></h4>
+                <p>Jumla ya pesa aliyotumia ni: 2000 TZS (mapera) + 1750 TZS (ndizi) + 1080 TZS (machungwa) = 4830 TZS.</p>
             </div>
         </div>
     </div>
+
 </div>
 {% endblock %}
